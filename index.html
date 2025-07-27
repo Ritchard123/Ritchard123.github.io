@@ -1,407 +1,870 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Ritchard's Profile</title>
+<head>
+  <title>Ritchard M - Full Stack Developer</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="description" content="Ritchard M - Full Stack Developer specializing in MERN/PERN stacks, React, Node.js, and modern web technologies" />
+  <meta name="keywords" content="Full Stack Developer, React, Node.js, MongoDB, SQL, MERN Stack, PERN Stack" />
+  <meta name="author" content="Ritchard M" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/profile.css" />
+  <link rel="stylesheet" href="css/tooplate-ben-resume-style.css" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="Tooplate" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+  <!-- Loading Animation -->
+  <div id="loader" class="loader">
+    <div class="loader-content">
+      <div class="spinner"></div>
+      <p>Loading...</p>
+    </div>
+  </div>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/profile.css" />
-    <link rel="stylesheet" href="css/tooplate-ben-resume-style.css" />
-  </head>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <span class="brand-text">RM</span>
+      </a>
 
-  <body data-spy="scroll" data-target="#navbarNav" data-offset="50">
-    <script>
-      let currentIndex = 0;
-      function moveSlide(direction) {
-        const items = document.querySelectorAll(".carousels-item");
-        const totalItems = items.length;
-        currentIndex += direction;
-        if (currentIndex < 0) {
-          currentIndex = totalItems - 1;
-        } else if (currentIndex >= totalItems) {
-          currentIndex = 0;
-        }
-        const offset = -currentIndex * 100;
-        document.querySelector(
-          ".carousels-items"
-        ).style.transform = `translateX(${offset}%)`;
-      }
-    </script>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- MENU BAR -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="#"> Ritchard's Profile </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a href="#home" class="nav-link smoothScroll">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link smoothScroll">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link smoothScroll">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link smoothScroll">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link smoothScroll">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link smoothScroll">Contact</a>
+          </li>
+        </ul>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a href="#intro" class="nav-link smoothScroll">Introduction</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#about" class="nav-link smoothScroll">About Me</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#testimonials" class="nav-link smoothScroll">Projects</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#contact" class="nav-link smoothScroll">Contact</a>
-            </li>
-          </ul>
-
-          <div class="mt-lg-0 mt-3 mb-4 mb-lg-0">
-            <a href="https://drive.google.com/file/d/1yjctn2RnWkZoyd1WbTbXDWUVNYBvblXv/view?usp=sharing" target="_blank" class="custom-btn btn" download>Download CV</a>
-          </div>
+        <div class="nav-cta">
+          <a href="https://drive.google.com/file/d/1eeCYYDQ9xCfpA02RAUEBlh8PeiD6dhuX/view?usp=sharing" target="_blank" class="btn btn-primary">
+            <i class="fas fa-download"></i> Download CV
+          </a>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <section
-      class="hero d-flex flex-column justify-content-center align-items-center"
-      id="intro"
-      style="height: 100vh"
-    >
-      <div class="container">
-        <div class="row">
-          <div
-            class="d-flex flex-column justify-content-center align-items-center col-lg-7 col-md-7 col-12"
-          >
-            <div class="hero-text">
-              <h1 class="hero-title">👋 Hi, I am Ritchard</h1>
-
-              <a href="#" class="email-link"> software Developer </a>
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-background">
+      <div class="particles"></div>
+    </div>
+    <div class="container">
+      <div class="row align-items-center min-vh-100">
+        <div class="col-lg-6 col-md-12">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span>👋 Available for opportunities</span>
+            </div>
+            <h1 class="hero-title">
+              Hi, I'm <span class="highlight">Ritchard M</span>
+            </h1>
+            <h2 class="hero-subtitle">Full Stack Developer</h2>
+            <p class="hero-description">
+              Passionate about crafting scalable web applications with modern technologies. 
+              Specialized in MERN/PERN stacks with 1.5+ years of experience building 
+              innovative solutions that make a difference.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary btn-lg">
+                <i class="fas fa-rocket"></i> View My Work
+              </a>
+              <a href="#contact" class="btn btn-outline-primary btn-lg">
+                <i class="fas fa-envelope"></i> Get In Touch
+              </a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number">1.5+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Technologies</span>
+              </div>
             </div>
           </div>
-
-          <div
-            class="mx-auto col-lg-5 col-md-5 col-10"
-            style="margin-top: 50px"
-          >
-            <img
-              src="images/chatgpt.webp"
-              class="img-fluid"
-              alt="Ben Resume HTML Template"
-            />
-          </div>
         </div>
-      </div>
-    </section>
-
-    <section class="about section-padding" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-12">
-            <p>
-              My name is Ritchard, and I have around one year of experience in
-              full-stack development, focusing on technologies like React,
-              Node.js, MongoDB, and SQL. I started my journey with a strong
-              foundation in software architecture principles, including SOLID,
-              and have applied them in various projects.
-            </p>
-
-            <p>
-              I’m enthusiastic about building scalable, efficient solutions and
-              excited to contribute to projects that challenge and expand my
-              expertise.
-            </p>
-
-            <ul class="mt-4 mb-5 mb-lg-0 profile-list list-unstyled">
-              <li><strong>Full Name :</strong> Ritchard M</li>
-
-              <li><strong>Date of Birth:</strong> 19 April 2002</li>
-
-              <li><strong>Company :</strong> Dranzo Techlabs llp</li>
-
-              <li><strong>Designation :</strong> Software Developer</li>
-
-              <li><strong>Email :</strong> mahimairichard@gmail.com</li>
-            </ul>
-          </div>
-
-          <div class="col-lg-5 mx-auto col-md-6 col-12">
-            <img
-              src="images/Ritchard.jpg"
-              class="about-image img-fluid"
-              alt="Ben's Resume HTML Template"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="testimonials section-padding" id="testimonials">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h3 class="text-center" style="margin-bottom: 30px">Projects</h3>
-            <div class="carousel">
-              <div class="arrow left" onclick="moveSlide(-1)">&#10094;</div>
-
-              <!-- Carousel Items Wrapper -->
-              <div class="carousels-items">
-                <!-- Carousel Item 1 -->
-                <div class="carousels-item">
-                  <div class="testimonials-thumb d-flex">
-                    <div class="testimonials-images">
-                      <img
-                        src="images/cloudzudio.png"
-                        class="img-fluid"
-                        alt="testimonials image"
-                      />
+        <div class="col-lg-6 col-md-12">
+          <div class="hero-image-container">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="hover-text">
+                    <div class="profile-icon">
+                      <i class="fas fa-code"></i>
                     </div>
-                    <div class="testimonials-info">
-                      <h6 class="mb-0">CloudZudio</h6>
-                      <p>
-                        It is a no-code platform using React, Node.js, and
-                        MongoDB, which allowed users to develop ERP systems
-                        without needing to write code.It has the feature of live
-                        location tracking also.It is built using the
-                        technologies React js, Node js, Mongodb.
-                      </p>
+                    <h3>Welcome to My World</h3>
+                    <p>Where code meets creativity and innovation drives solutions. Hover to see my AI-generated avatar.</p>
+                    <div class="hover-indicator">
+                      <i class="fas fa-mouse"></i>
+                      <span>Hover Me</span>
                     </div>
                   </div>
                 </div>
-
-                <!-- Carousel Item 2 -->
-                <div class="carousels-item">
-                  <div class="testimonials-thumb d-flex">
-                    <div class="testimonials-images">
-                      <img
-                        src="images/tempoiot.png"
-                        class="img-fluid"
-                        alt="testimonials image"
-                      />
-                    </div>
-                    <div class="testimonials-info">
-                      <h6 class="mb-0">Tempoiot</h6>
-                      <p>
-                        It shows live graphical visualisation of industrial
-                        datas. Through socket live data is presented in UI.It is
-                        built using the technologies React js, Node js, pgsql,
-                        Mongodb.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Carousel Item 3 -->
-                <div class="carousels-item">
-                  <div class="testimonials-thumb d-flex">
-                    <div class="testimonials-images">
-                      <img
-                        src="images/library.png"
-                        class="img-fluid"
-                        alt="testimonials image"
-                      />
-                    </div>
-                    <div class="testimonials-info">
-                      <h6 class="mb-0">Library Management</h6>
-                      <p>
-                        It is a project mainly focused on schools and colleges
-                        to keep track of their library books. It is built using
-                        the technologies html,js,php,mysql.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Carousel Item 4 -->
-                <div class="carousels-item">
-                  <div class="testimonials-thumb d-flex">
-                    <div class="testimonials-images">
-                      <img
-                        src="images/food ordering.jpg"
-                        class="img-fluid"
-                        alt="testimonials image"
-                      />
-                    </div>
-                    <div class="testimonials-info">
-                      <h6 class="mb-0">Pre Food Ordering</h6>
-                      <p>
-                        It is used to pre book the food before reaching the
-                        restaurant.It is very useful for customers as well as
-                        shop owners.It reduces the waiting time of customers and
-                        it helps for restaurants to manage crowds.It is built
-                        using the technologies html,js,php,mysql.
-                      </p>
-                    </div>
-                  </div>
+                <div class="flip-card-back">
+                  <img src="images/chatgpt.webp" class="img-fluid" alt="Ritchard M - AI Generated Avatar" />
                 </div>
               </div>
-
-              <!-- Right Arrow -->
-              <div class="arrow right" onclick="moveSlide(1)">&#10095;</div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
 
-    <section class="contact section-padding pt-0" id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-12">
-            <form
-              id="contact-form"
-              action="#"
-              method="get"
-              class="contact-form webform"
-              role="form"
-            >
-              <div class="form-group d-flex flex-column-reverse">
-                <input
-                  type="text"
-                  class="form-control"
-                  name="cf-name"
-                  id="cf-name"
-                  placeholder="Your Name"
-                />
-
-                <label for="cf-name" class="webform-label">Full Name</label>
+  <!-- About Section -->
+  <section class="about-section section-padding" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-header text-center">
+            <h6 class="section-subtitle">About Me</h6>
+            <h2 class="section-title">Turning Ideas Into Reality</h2>
+            <p class="section-description">Passionate developer with a love for clean code and innovative solutions</p>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12">
+          <div class="about-content">
+            <div class="about-text">
+              <p class="lead">
+                I'm <strong>Ritchard M</strong>, a full-stack developer with 1.5+ years of experience building scalable 
+                web and mobile applications using the <strong>MERN and PERN stacks</strong>.
+              </p>
+              <p>
+                Proficient in <strong>React.js, Node.js, MongoDB, SQL, and Python</strong>, I specialize in crafting 
+                modular, high-performance systems following <strong>SOLID principles</strong> and clean architecture patterns. 
+                My development workflow includes efficient API integration, state management (Context API, Hooks), 
+                and real-time data handling via <strong>WebSockets and MQTT</strong>.
+              </p>
+              <p>
+                I've built and contributed to products like a no-code <strong>ERP platform</strong>, a real-time 
+                <strong>IoT monitoring dashboard</strong>, and a cross-platform <strong>social media app</strong> using 
+                <strong>React Native</strong>. My skill set extends to <strong>MongoDB indexing, RESTful APIs, CORS 
+                configuration, automated testing</strong> with Jest/Puppeteer, and data visualization through 
+                <strong>Google Charts and ESRI Maps</strong>.
+              </p>
+            </div>
+            <div class="about-features">
+              <div class="feature-item">
+                <i class="fas fa-rocket"></i>
+                <span>Fast & Responsive</span>
               </div>
-
-              <div class="form-group d-flex flex-column-reverse">
-                <input
-                  type="email"
-                  class="form-control"
-                  name="cf-email"
-                  id="cf-email"
-                  placeholder="Your Email"
-                />
-
-                <label for="cf-email" class="webform-label">Your Email</label>
+              <div class="feature-item">
+                <i class="fas fa-shield-alt"></i>
+                <span>Secure & Reliable</span>
               </div>
-
-              <div class="form-group d-flex flex-column-reverse">
-                <input
-                  type="text"
-                  class="form-control"
-                  name="cf-subject"
-                  id="cf-subject"
-                  placeholder="Your subject"
-                />
-
-                <label for="cf-email" class="webform-label">Your Subject</label>
+              <div class="feature-item">
+                <i class="fas fa-mobile-alt"></i>
+                <span>Mobile First</span>
               </div>
-
-              <div class="form-group d-flex flex-column-reverse">
-                <textarea
-                  class="form-control"
-                  rows="5"
-                  name="cf-message"
-                  id="cf-message"
-                  placeholder="Your Message"
-                ></textarea>
-
-                <label for="cf-message" class="webform-label">Message</label>
+              <div class="feature-item">
+                <i class="fas fa-code"></i>
+                <span>Clean Code</span>
               </div>
+            </div>
+            <div class="about-cta">
+              <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="about-image-container">
+            <div class="about-image-wrapper">
+              <img src="images/Ritchard.jpg" class="about-image" alt="Ritchard M" />
+              <div class="image-overlay">
+                <div class="overlay-content">
+                  <h4>Ritchard M</h4>
+                  <p>Full Stack Developer</p>
+                  <div class="social-links">
+                    <a href="https://www.linkedin.com/in/ritchard-mahimai-74b611225/" target="_blank">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Ritchard123" target="_blank">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:mahimairichard@gmail.com">
+                      <i class="fas fa-envelope"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-              <button
-                type="submit"
-                class="form-control"
-                id="submit-button"
-                name="submit"
-              >
-                Send
+  <!-- Skills Section -->
+  <section class="skills-section section-padding" id="skills">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-header text-center">
+            <h6 class="section-subtitle">My Skills</h6>
+            <h2 class="section-title">Technologies I Work With</h2>
+            <p class="section-description">A comprehensive toolkit for building modern web applications</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="skill-category">
+            <h3 class="category-title">
+              <i class="fas fa-code"></i>
+              Frontend Development
+            </h3>
+            <div class="skills-grid">
+              <div class="skill-item" data-skill="React.js">
+                <div class="skill-icon">⚛️</div>
+                <span class="skill-name">React.js</span>
+                <div class="skill-level">
+                  <div class="skill-bar" data-level="90"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-skill="React Native">
+                <div class="skill-icon">📱</div>
+                <span class="skill-name">React Native</span>
+                <div class="skill-level">
+                  <div class="skill-bar" data-level="40"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-skill="HTML/CSS">
+                <div class="skill-icon">🎨</div>
+                <span class="skill-name">HTML/CSS</span>
+                <div class="skill-level">
+                  <div class="skill-bar" data-level="95"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-skill="JavaScript">
+                <div class="skill-icon">💻</div>
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-level">
+                  <div class="skill-bar" data-level="90"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="skill-category">
+            <h3 class="category-title">
+              <i class="fas fa-server"></i>
+              Backend Development
+            </h3>
+            <div class="skills-grid">
+              <div class="skill-item" data-skill="Node.js">
+                <div class="skill-icon">🟢</div>
+                <span class="skill-name">Node.js</span>
+                <div class="skill-level">
+                  <div class="skill-bar" data-level="88"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-skill="Express.js">
+                <div class="skill-icon">🚀</div>
+                <span class="skill-name">Express.js</span>
+                <div class="skill-level">
+                  <div class="skill-bar" data-level="85"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-skill="Python">
+                <div class="skill-icon">🐍</div>
+                <span class="skill-name">Python</span>
+                <div class="skill-level">
+                  <div class="skill-bar" data-level="80"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-skill="REST APIs">
+                <div class="skill-icon">🔗</div>
+                <span class="skill-name">REST APIs</span>
+                <div class="skill-level">
+                  <div class="skill-bar" data-level="92"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="skill-category">
+            <h3 class="category-title">
+              <i class="fas fa-database"></i>
+              Database & Tools
+            </h3>
+            <div class="skills-grid">
+              <div class="skill-item" data-skill="MongoDB">
+                <div class="skill-icon">🍃</div>
+                <span class="skill-name">MongoDB</span>
+                <div class="skill-level">
+                  <div class="skill-bar" data-level="85"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-skill="PostgreSQL">
+                <div class="skill-icon">🐘</div>
+                <span class="skill-name">PostgreSQL</span>
+                <div class="skill-level">
+                  <div class="skill-bar" data-level="80"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-skill="Git">
+                <div class="skill-icon">📚</div>
+                <span class="skill-name">Git</span>
+                <div class="skill-level">
+                  <div class="skill-bar" data-level="90"></div>
+                </div>
+              </div>
+              <!-- <div class="skill-item" data-skill="Docker">
+                <div class="skill-icon">🐳</div>
+                <span class="skill-name">Docker</span>
+                <div class="skill-level">
+                  <div class="skill-bar" data-level="75"></div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects-section section-padding" id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-header text-center">
+            <h6 class="section-subtitle">My Work</h6>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-description">Showcasing my best work and innovative solutions</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="projects-carousel">
+            <div class="carousel-container">
+              <div class="carousel-track">
+                <!-- Project 1 -->
+                <div class="project-card">
+                  <div class="project-image">
+                    <img src="images/cloudzudio.png" alt="CloudZudio" />
+                    <!-- <div class="project-overlay">
+                      <div class="project-links">
+                        <a href="#" class="project-link">
+                          <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="#" class="project-link">
+                          <i class="fab fa-github"></i>
+                        </a>
+                      </div>
+                    </div> -->
+                  </div>
+                  <div class="project-content">
+                    <h3 class="project-title">CloudZudio</h3>
+                    <p class="project-description">
+                      A no-code platform enabling users to develop ERP systems without coding. 
+                      Features live location tracking and comprehensive business management tools.
+                    </p>
+                    <div class="project-tech">
+                      <span class="tech-tag">React.js</span>
+                      <span class="tech-tag">Python</span>
+                      <span class="tech-tag">MongoDB</span>
+                      <span class="tech-tag">No-Code</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                  <div class="project-image">
+                    <img src="images/tempoiot.png" alt="TempoIoT" />
+                    <!-- <div class="project-overlay">
+                      <div class="project-links">
+                        <a href="#" class="project-link">
+                          <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="#" class="project-link">
+                          <i class="fab fa-github"></i>
+                        </a>
+                      </div>
+                    </div> -->
+                  </div>
+                  <div class="project-content">
+                    <h3 class="project-title">TempoIoT</h3>
+                    <p class="project-description">
+                      Real-time industrial data visualization dashboard with live graphical 
+                      representations through WebSocket connections.
+                    </p>
+                    <div class="project-tech">
+                      <span class="tech-tag">React.js</span>
+                      <span class="tech-tag">Node.js</span>
+                      <span class="tech-tag">PostgreSQL</span>
+                      <span class="tech-tag">WebSockets</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                  <div class="project-image">
+                    <img src="images/library.png" alt="Library Management" />
+                    <!-- <div class="project-overlay">
+                      <div class="project-links">
+                        <a href="#" class="project-link">
+                          <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="#" class="project-link">
+                          <i class="fab fa-github"></i>
+                        </a>
+                      </div>
+                    </div> -->
+                  </div>
+                  <div class="project-content">
+                    <h3 class="project-title">Library Management System</h3>
+                    <p class="project-description">
+                      Comprehensive library management solution for educational institutions 
+                      to efficiently track and manage book inventory.
+                    </p>
+                    <div class="project-tech">
+                      <span class="tech-tag">HTML</span>
+                      <span class="tech-tag">JavaScript</span>
+                      <span class="tech-tag">PHP</span>
+                      <span class="tech-tag">MySQL</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                  <div class="project-image">
+                    <img src="images/food ordering.jpg" alt="Pre Food Ordering" />
+                    <!-- <div class="project-overlay">
+                      <div class="project-links">
+                        <a href="#" class="project-link">
+                          <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="#" class="project-link">
+                          <i class="fab fa-github"></i>
+                        </a>
+                      </div>
+                    </div> -->
+                  </div>
+                  <div class="project-content">
+                    <h3 class="project-title">Pre Food Ordering System</h3>
+                    <p class="project-description">
+                      Restaurant pre-booking platform that reduces customer wait times and 
+                      helps restaurants manage crowds efficiently.
+                    </p>
+                    <div class="project-tech">
+                      <span class="tech-tag">HTML</span>
+                      <span class="tech-tag">JavaScript</span>
+                      <span class="tech-tag">PHP</span>
+                      <span class="tech-tag">MySQL</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-controls">
+              <button class="carousel-btn prev" onclick="moveSlide(-1)">
+                <i class="fas fa-chevron-left"></i>
               </button>
-            </form>
-          </div>
-
-          <div class="mx-auto col-lg-4 col-md-6 col-12">
-            <h3 class="my-4 pt-4 pt-lg-0">Say hello</h3>
-
-            <p class="mb-1">+91-9360800689</p>
-
-            <p>
-              <a href="#"> mahimairichard@gmail.com </a>
-            </p>
-
-            <ul class="social-links mt-2">
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/ritchard-mahimai-74b611225/"
-                  target="_blank"
-                  class="fab fa-linkedin"
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/Ritchard123"
-                  target="_blank"
-                  class="fab fa-github"
-                ></a>
-              </li>
-            </ul>
+              <button class="carousel-btn next" onclick="moveSlide(1)">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- SCRIPTS -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-    <script>
-      document
-        .getElementById("submit-button")
-        .addEventListener("click", function (e) {
-          e.preventDefault();
-          emailjs.init("CscwK0mJDoJBe2BMA");
+    </div>
+  </section>
 
-          const name = document.getElementById("cf-name").value;
-          const email = document.getElementById("cf-email").value;
-          const subject = document.getElementById("cf-subject").value;
-          const message = document.getElementById("cf-message").value;
+  <!-- Experience Section -->
+  <section class="experience-section section-padding" id="experience">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-header text-center">
+            <h6 class="section-subtitle">Experience</h6>
+            <h2 class="section-title">My Professional Journey</h2>
+            <p class="section-description">Building experience through meaningful projects and collaborations</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Software Developer</h3>
+                  <span class="company">Dranzo Techlabs LLP</span>
+                  <span class="duration">Oct 2023 - Dec 2024</span>
+                </div>
+                <p>
+                  Built <strong>CloudZudio</strong> - a comprehensive no-code ERP platform using React.js, Python and MongoDB 
+                  . Focused on creating a scalable, modular architecture with emphasis on 
+                  performance, maintainability, and clean code practices following SOLID principles.
+                </p>
+                <div class="achievements">
+                  <h4>Key Achievements:</h4>
+                  <ul>
+                    <li>Designed secure and optimized data handling layers using MongoDB indexing and aggregation pipelines</li>
+                    <li>Implemented secure CORS configurations using Python Flask frameworks for API access control</li>
+                    <li>Developed rich, responsive UIs using React.js with efficient component reusability</li>
+                    <li>Integrated React-Alignment-Guides for intuitive drag-and-drop layouts and grid systems</li>
+                    <li>Incorporated Google Charts for interactive graphs, analytics, and business reporting</li>
+                    <li>Applied SOLID principles and clean code practices for maintainable backend services</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Software Developer Intern</h3>
+                  <span class="company">Quantanics Techserv Pvt Ltd</span>
+                  <span class="duration">April 2023 - Oct 2023</span>
+                </div>
+                <p>
+                  Contributed to the development of <strong>TempoIoT</strong> - a real-time monitoring system 
+                  for industrial machinery. Worked on full-stack development using React frontend and Node.js backend 
+                  with PostgreSQL database, implementing real-time data visualization and monitoring capabilities.
+                </p>
+                <div class="achievements">
+                  <h4>Key Achievements:</h4>
+                  <ul>
+                    <li>Designed and implemented features to collect, process, and display hardware sensor data effectively</li>
+                    <li>Integrated MQTT protocol to receive live data from industrial machinery (temperature, pressure parameters)</li>
+                    <li>Utilized WebSockets for seamless bidirectional communication between client and server</li>
+                    <li>Built interactive graphs using React Charts to display real-time metrics and device status</li>
+                    <li>Gained comprehensive experience in full-stack development from Node.js backend to React UI</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <!-- <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Freelance Developer</h3>
+                  <span class="company">Self-Employed</span>
+                  <span class="duration">2022 - 2023</span>
+                </div>
+                <p>
+                  Worked on various client projects including e-commerce platforms, 
+                  content management systems, and custom web applications.
+                </p>
+                <div class="achievements">
+                  <h4>Key Achievements:</h4>
+                  <ul>
+                    <li>Delivered 3+ client projects on time and within budget</li>
+                    <li>Developed library management system for educational institutions</li>
+                    <li>Created food ordering system for restaurants</li>
+                    <li>Maintained 100% client satisfaction rate</li>
+                  </ul>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          const template_params = {
-            name: name,
-            email: "mahimairichard@gmail.com",
-            senderemail: email,
-            subject: subject,
-            message: message,
-          };
+  <!-- Contact Section -->
+  <section class="contact-section section-padding" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-header text-center">
+            <h6 class="section-subtitle">Get In Touch</h6>
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="section-description">Ready to bring your ideas to life? Let's discuss your project</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="contact-container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="contact-info">
+                  <h3>Let's Connect</h3>
+                  <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.</p>
+                  
+                  <div class="contact-details">
+                    <div class="contact-item">
+                      <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                      </div>
+                      <div class="contact-text">
+                        <h5>Email</h5>
+                        <a href="mailto:mahimairichard@gmail.com">mahimairichard@gmail.com</a>
+                      </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                      <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                      </div>
+                      <div class="contact-text">
+                        <h5>Phone</h5>
+                        <a href="tel:+919360800689">+91 9360800689</a>
+                      </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                      <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                      <div class="contact-text">
+                        <h5>Location</h5>
+                        <span>Trichy, Tamil Nadu, India</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="social-links">
+                    <a href="https://www.linkedin.com/in/ritchard-mahimai-74b611225/" target="_blank" class="social-link">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Ritchard123" target="_blank" class="social-link">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:mahimairichard@gmail.com" class="social-link">
+                      <i class="fas fa-envelope"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-lg-6">
+                <form id="contact-form" class="contact-form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                  </div>
+                  
+                  <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          emailjs
-            .send("service_ran3fld", "template_sqab5uh", template_params)
-            .then(function (response) {
-              alert("Email sent successfully!");
-              console.log("SUCCESS!", response.status, response.text);
-            })
-            .catch(function (error) {
-              alert("Failed to send email. Please try again later.");
-              console.error("FAILED...", error);
-            });
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <div class="footer-content">
+            <div class="footer-logo">
+              <span>RM</span>
+            </div>
+            <p>&copy; 2024 Ritchard M. All rights reserved.</p>
+            <div class="footer-links">
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#projects">Projects</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/custom.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+  <script>
+    // Carousel functionality
+    let currentIndex = 0;
+    const projectCards = document.querySelectorAll('.project-card');
+    const track = document.querySelector('.carousel-track');
+    
+    function moveSlide(direction) {
+      currentIndex += direction;
+      if (currentIndex < 0) {
+        currentIndex = projectCards.length - 1;
+      } else if (currentIndex >= projectCards.length) {
+        currentIndex = 0;
+      }
+      
+      const offset = -currentIndex * 100;
+      track.style.transform = `translateX(${offset}%)`;
+    }
+
+    // Loading animation
+    window.addEventListener('load', function() {
+      const loader = document.getElementById('loader');
+      loader.style.opacity = '0';
+      setTimeout(() => {
+        loader.style.display = 'none';
+      }, 500);
+    });
+
+    // Smooth scrolling for navigation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Back to top button
+    const backToTopBtn = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopBtn.classList.add('show');
+      } else {
+        backToTopBtn.classList.remove('show');
+      }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // Contact form submission
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      emailjs.init("CscwK0mJDoJBe2BMA");
+      
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value;
+      
+      const template_params = {
+        name: name,
+        email: "mahimairichard@gmail.com",
+        senderemail: email,
+        subject: subject,
+        message: message,
+      };
+      
+      emailjs.send("service_ran3fld", "template_sqab5uh", template_params)
+        .then(function(response) {
+          alert("Message sent successfully!");
+          document.getElementById('contact-form').reset();
+        })
+        .catch(function(error) {
+          alert("Failed to send message. Please try again later.");
+          console.error("FAILED...", error);
         });
-    </script>
-  </body>
+    });
+
+    // Skill bars animation
+    const observerOptions = {
+      threshold: 0.5,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const skillBars = entry.target.querySelectorAll('.skill-bar');
+          skillBars.forEach(bar => {
+            const level = bar.getAttribute('data-level');
+            bar.style.width = level + '%';
+          });
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.skill-category').forEach(category => {
+      observer.observe(category);
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 100) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
 </html>
