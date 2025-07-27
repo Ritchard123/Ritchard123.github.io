@@ -964,11 +964,11 @@ body {
   font-size: 1.2rem;
 }
 
-.social-link:hover {
+/* .social-link:hover {
   transform: translateY(-3px) scale(1.05);
   box-shadow: var(--shadow-medium);
   background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
-}
+} */
 
 .contact-form .form-group {
   margin-bottom: 1.5rem;
